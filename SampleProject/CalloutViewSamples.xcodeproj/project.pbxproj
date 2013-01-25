@@ -35,6 +35,8 @@
 		01A6EE6315D49BD500E895D6 /* SMCalloutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMCalloutView.h; path = ../SMCalloutView.h; sourceTree = "<group>"; };
 		01A6EE6415D49BD500E895D6 /* SMCalloutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMCalloutView.m; path = ../SMCalloutView.m; sourceTree = "<group>"; };
 		01A6EE7815D572C300E895D6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F99979F916B23CD600D62E91 /* UIView+FrameAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+FrameAdditions.h"; sourceTree = "<group>"; };
+		F99979FA16B23CD600D62E91 /* UIView+FrameAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+FrameAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,8 @@
 			children = (
 				01A6EE6315D49BD500E895D6 /* SMCalloutView.h */,
 				01A6EE6415D49BD500E895D6 /* SMCalloutView.m */,
+				F99979F916B23CD600D62E91 /* UIView+FrameAdditions.h */,
+				F99979FA16B23CD600D62E91 /* UIView+FrameAdditions.m */,
 			);
 			name = "Callout View";
 			sourceTree = "<group>";
