@@ -1,3 +1,12 @@
+//
+//  SMCallout.h
+//
+//  This was created by Nick Farina as a public repository on GitHub
+//  https://github.com/nfarina/calloutview
+//
+//
+
+
 #import <UIKit/UIKit.h>
 
 /*
@@ -5,7 +14,7 @@
 SMCalloutView
 -------------
 Created by Nick Farina (nfarina@gmail.com)
-Version 1.0.1
+Version 1.1
 
 */
 
@@ -30,7 +39,6 @@ typedef NSInteger SMCalloutAnimation;
 extern NSTimeInterval kSMCalloutViewRepositionDelayForUIScrollView;
 
 @protocol SMCalloutViewDelegate;
-@class SMCalloutViewBackground;
 
 //
 // Callout view.
@@ -41,13 +49,15 @@ extern NSTimeInterval kSMCalloutViewRepositionDelayForUIScrollView;
 @property (nonatomic, unsafe_unretained) id<SMCalloutViewDelegate> delegate;
 @property (nonatomic, copy) NSString *title, *subtitle; // title/titleView relationship mimics UINavigationBar.
 @property (nonatomic, retain) UIView *leftAccessoryView, *rightAccessoryView;
-@property (nonatomic, retain) SMCalloutViewBackground *background;
 
 // Custom title/subtitle views. if these are set, the respective title/subtitle properties will be ignored.
 // Keep in mind that SMCalloutView calls -sizeThatFits on titleView/subtitleView if defined, so your view
 // may be resized as a result of that (especially if you're using UILabel/UITextField). You may want to subclass
 // and override -sizeThatFits, or just wrap your view in a "generic" UIView if you do not want it to be auto-sized.
 @property (nonatomic, retain) UIView *titleView, *subtitleView;
+
+// Custom "content" view that can be any width/height. If this is set, title/subtitle/titleView/subtitleView are all ignored.
+@property (nonatomic, retain) UIView *contentView;
 
 // calloutOffset is the offset in screen points from the top-middle of the annotation view, where the anchor of the callout should be shown.
 @property (nonatomic, assign) CGPoint calloutOffset;
@@ -65,15 +75,6 @@ extern NSTimeInterval kSMCalloutViewRepositionDelayForUIScrollView;
 
 - (void)dismissCalloutAnimated:(BOOL)animated;
 
-@end
-
-//
-// Class for collating the various background images that are pieced together to form the overall background graphic with the pointy arrow.
-//
-
-@interface SMCalloutViewBackground : NSObject
-@property (nonatomic, retain) UIImage *leftCapImage, *rightCapImage, *topAnchorImage, *bottomAnchorImage, *backgroundImage;
-+ (SMCalloutViewBackground *)systemBackground;
 @end
 
 @protocol SMCalloutViewDelegate <NSObject>
