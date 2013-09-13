@@ -1,3 +1,12 @@
+//
+//  SMCallout.h
+//
+//  This was created by Nick Farina as a public repository on GitHub
+//  https://github.com/nfarina/calloutview
+//
+//
+
+
 #import <UIKit/UIKit.h>
 
 /*
