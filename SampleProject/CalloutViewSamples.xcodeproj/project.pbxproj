@@ -17,7 +17,9 @@
 		01A1D514161129080021F8DD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 01A1D513161129080021F8DD /* Default-568h@2x.png */; };
 		01A6EE6515D49BD500E895D6 /* SMCalloutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A6EE6415D49BD500E895D6 /* SMCalloutView.m */; };
 		01A6EE7915D572C300E895D6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01A6EE7815D572C300E895D6 /* QuartzCore.framework */; };
-		F9997A0D16B28F2300D62E91 /* UIView+FrameAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F99979FA16B23CD600D62E91 /* UIView+FrameAdditions.m */; };
+		F9FBF63A17E8FF7F00F7A89A /* SMMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FBF63517E8FF7F00F7A89A /* SMMapAnnotation.m */; };
+		F9FBF63B17E8FF7F00F7A89A /* SMMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FBF63717E8FF7F00F7A89A /* SMMapView.m */; };
+		F9FBF63C17E8FF7F00F7A89A /* UIView+FrameAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FBF63917E8FF7F00F7A89A /* UIView+FrameAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,8 +38,12 @@
 		01A6EE6315D49BD500E895D6 /* SMCalloutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMCalloutView.h; path = ../SMCalloutView.h; sourceTree = "<group>"; };
 		01A6EE6415D49BD500E895D6 /* SMCalloutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMCalloutView.m; path = ../SMCalloutView.m; sourceTree = "<group>"; };
 		01A6EE7815D572C300E895D6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		F99979F916B23CD600D62E91 /* UIView+FrameAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+FrameAdditions.h"; sourceTree = "<group>"; };
-		F99979FA16B23CD600D62E91 /* UIView+FrameAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+FrameAdditions.m"; sourceTree = "<group>"; };
+		F9FBF63417E8FF7F00F7A89A /* SMMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMMapAnnotation.h; sourceTree = "<group>"; };
+		F9FBF63517E8FF7F00F7A89A /* SMMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMMapAnnotation.m; sourceTree = "<group>"; };
+		F9FBF63617E8FF7F00F7A89A /* SMMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMMapView.h; sourceTree = "<group>"; };
+		F9FBF63717E8FF7F00F7A89A /* SMMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMMapView.m; sourceTree = "<group>"; };
+		F9FBF63817E8FF7F00F7A89A /* UIView+FrameAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FrameAdditions.h"; sourceTree = "<group>"; };
+		F9FBF63917E8FF7F00F7A89A /* UIView+FrameAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FrameAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +108,12 @@
 			children = (
 				01A6EE6315D49BD500E895D6 /* SMCalloutView.h */,
 				01A6EE6415D49BD500E895D6 /* SMCalloutView.m */,
-				F99979F916B23CD600D62E91 /* UIView+FrameAdditions.h */,
-				F99979FA16B23CD600D62E91 /* UIView+FrameAdditions.m */,
+				F9FBF63417E8FF7F00F7A89A /* SMMapAnnotation.h */,
+				F9FBF63517E8FF7F00F7A89A /* SMMapAnnotation.m */,
+				F9FBF63617E8FF7F00F7A89A /* SMMapView.h */,
+				F9FBF63717E8FF7F00F7A89A /* SMMapView.m */,
+				F9FBF63817E8FF7F00F7A89A /* UIView+FrameAdditions.h */,
+				F9FBF63917E8FF7F00F7A89A /* UIView+FrameAdditions.m */,
 			);
 			name = "Callout View";
 			sourceTree = "<group>";
@@ -182,9 +192,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9997A0D16B28F2300D62E91 /* UIView+FrameAdditions.m in Sources */,
 				01A6EE6515D49BD500E895D6 /* SMCalloutView.m in Sources */,
+				F9FBF63A17E8FF7F00F7A89A /* SMMapAnnotation.m in Sources */,
+				F9FBF63C17E8FF7F00F7A89A /* UIView+FrameAdditions.m in Sources */,
 				017FD73F15D317B1006825B3 /* AppDelegate.m in Sources */,
+				F9FBF63B17E8FF7F00F7A89A /* SMMapView.m in Sources */,
 				017FD74015D317B1006825B3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
